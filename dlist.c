@@ -86,10 +86,10 @@ void dlist_clear(dlist* list){
 void dlist_print(dlist* list, const char* msg){
   printf("%s", msg);
   dnode* p = list->head;
-  printf("   %p  <- %d %p -> %p\n", p-> prev, p-> data, p, p-> next);
+  printf("   %p  <-- %d (%p) --> %p\n", p-> prev, p-> data, p, p-> next);
   p= p-> next;
   while(p != NULL){
-    printf("   %p <- %d %p -> %p\n", p-> prev, p-> data, p, p-> next);
+    printf("   %p <-- %d (%p) --> %p\n", p-> prev, p-> data, p, p-> next);
     p= p-> next;}
 }
 
