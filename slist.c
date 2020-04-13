@@ -71,7 +71,7 @@ void slist_print(slist* list, const char* msg){
   printf("%s", msg);
   snode* p= list-> head;
   while(p != NULL) {
-    printf("%d -> %p\n", p-> data, p-> next);
+    printf("%d --> %p\n", p-> data, p-> next);
     p= p-> next;}
 }
 
